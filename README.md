@@ -1,16 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# New Combin Technical Test
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Configuración
 
-## Recommended IDE Setup
+Para poder ejecutar correctamente este proyecto se deberán de instalar las dependencias que se encuentran en el archivo __package.json__ ejecutando el comando:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```
+npm install
+```
 
-## Type Support For `.vue` Imports in TS
+Para ejecutar el proyecto en un ambiente local deberás de usar el comando:
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+```
+npm run dev
+```
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+## Como usar
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+El proyecto cuenta con una única pantalla principal separada en dos secciones principales:
+
+![app-layout](./doc/assets/app-layout.png)
+
+### Buscador de Archivos
+
+Esta sección nos muestra en forma de cuadricula un listado de todos los archivos que tenemos en el sitio. Esta sección implementa la funcionalidad de Drag&Drop por lo que podemos tener estos archivos en el cualquier orden.
+
+Al presionar el botón de ___Add File___ la aplicación generada un nuevo archivo con información aleatoria, entre esta información se encuentra:
+
+* ID: para optimizar he identificar cada elemento
+* Color: el color que tendrá el documento al momento de mostrarse en el Timeline
+* Size: el tamaño que ocupara el documento en el Timeline
+
+### Timeline
+
+En esta sección nos encontraremos un listado vertical de canales o "Tracks", estos canales se encargan de mostrar de forma horizontal los documentos que se encuentren esa fila.
+
+Para añadir un archivo a nuestro canal deberemos de arrastrar desde el listado de archivos un elemento al canal deseado, de esta forma se representara en forma de rectángulo de un largo aleatoria y un coloro aleatorio, adicional se añade un pequeño borde de color gris para que sea mas fácil diferenciar cada elemento. Desde un canal podemos mover archivos a otro arrastrando el elemento correspondiente.
