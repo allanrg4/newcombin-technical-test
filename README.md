@@ -35,3 +35,5 @@ Al presionar el botón de ___Add File___ la aplicación generada un nuevo archiv
 En esta sección nos encontraremos un listado vertical de canales o "Tracks", estos canales se encargan de mostrar de forma horizontal los documentos que se encuentren esa fila.
 
 Para añadir un archivo a nuestro canal deberemos de arrastrar desde el listado de archivos un elemento al canal deseado, de esta forma se representara en forma de rectángulo de un largo aleatoria y un coloro aleatorio, adicional se añade un pequeño borde de color gris para que sea mas fácil diferenciar cada elemento. Desde un canal podemos mover archivos a otro arrastrando el elemento correspondiente.
+
+Para poder añadir canales al Timeline podemos presionar el botón de "Add Track", esto crea un nuevo canal hasta en la última fila.
