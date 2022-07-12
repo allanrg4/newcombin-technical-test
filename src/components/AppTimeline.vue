@@ -12,7 +12,7 @@ const store = useStore()
   <div class="flex flex-col divide-y">
     <timeline-row
         v-for="(track, i) in store.tracks"
-        :key="`track-${i}`"
+        :key="track.id"
         :index="i"
         :track="track"
     ></timeline-row>

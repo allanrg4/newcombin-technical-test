@@ -10,7 +10,9 @@
   "dependencies": {
     "@heroicons/vue": "^1.0.6",
     "pinia": "^2.0.15",
-    "vue": "^3.2.25"
+    "uuid": "^8.3.2",
+    "vue": "^3.2.25",
+    "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
